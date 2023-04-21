@@ -1,4 +1,4 @@
-descriptors =  ['agony', 'demented', 'scrimblo', 'jimbo', 'jimblo', 'dirt', 'pepega', 'pepe', 'tragedy', 'dirtbag', 'dirty']
+descriptors =  ['agony', 'demented', 'scrimblo', 'jimbo', 'jimblo', 'dirt', 'pepega', 'pepe', 'tragedy', 'dirtbag', 'dirty', 'little', 'shriveled']
 
 nouns = ['head', 'skippy', 'jokic', 'jamaldo', 'casino', 'flicky', 'G.O.A.T', 'clown', 'idiot']
 
