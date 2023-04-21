@@ -22,16 +22,16 @@ async def on_message(message):
     
     insult = helpers.random_insult()
     
-    
-    await message.channel.send(insult)
-
-    num = random.random()
-    if num > 0.8:
-        await message.channel.send('It\'s so over')
-    elif num > 0.95:
-        await message.channel.send('It\'s so fucking over')
-    elif num > 0.99:
-        await message.channel.send('Mom would be sad')
+    if message.content.startswith('&oatley'):
+        await message.channel.send(insult)
+    else:
+        num = random.random()
+        if num > 0.8:
+            await message.channel.send('It\'s so over')
+        elif num > 0.95:
+            await message.channel.send('It\'s so fucking over')
+        elif num > 0.99:
+            await message.channel.send('Mom would be sad')
     
     
     #if message.content.startswith('&oatley'):
