@@ -119,10 +119,11 @@ async def on_message(message):
         #f = open('db.json')
         #db = json.load(f)
         # f.close()
-
-        vid = saved_media.find_one({"name": command})
-
-        await message.channel.send(file=discord.File(vid["filename"]))
+        try:
+            vid = saved_media.find_one({"name": command})
+            await message.channel.send(file=discord.File(vid["filename"]))
+        except:
+            await message.channel.send("Doesn't exist, " + helpers.desc_noun())
 
     else:
         num = random.random()
